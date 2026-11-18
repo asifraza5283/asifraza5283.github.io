@@ -12,11 +12,12 @@ Plain HTML and CSS, hosted free on GitHub Pages. Any change you commit goes live
 | `academic-background.html` | Current position, education, teaching, internship, CV |
 | `research.html` | The four research projects with figures |
 | `publications.html` | Journal articles and conference talks |
+| `achievements.html` | Fellowships, awards, academic distinctions, leadership, hobbies |
 | `gallery.html` | Conference photos with captions |
 | `courses.html` | Coursework |
 | `contact.html` | Address, email, phone, profile links |
 | `styles.css` | All colours, fonts and layout (shared by every page) |
-| `images/` | `profile.jpg`, `logos/`, `research/`, `gallery/` |
+| `images/` | `profile.jpg`, `logos/`, `research/`, `gallery/`, `hobbies/` |
 | `cv.pdf` | Your CV (upload it with exactly this name) |
 
 ## How to edit (in the browser, no software needed)
@@ -45,7 +46,11 @@ Tip: on the repository page, press the **`.`** key to open a full editor (github
 
 **Change colours or fonts**: open `styles.css`; the colours are listed at the top under `:root`. Change `--accent` to change the highlight colour everywhere.
 
-**Edit the top menu or footer**: these are repeated on every page, so make the same change in all seven `.html` files.
+**Add your cricket photos** (`achievements.html`): upload them into `images/hobbies/`, then in the Hobbies section delete the two lines that say `PHOTOS START` and `PHOTOS END`, and change the file names and captions.
+
+**Add an award** (`achievements.html`): copy one `<li> ... </li>` line in the right list and change the text and year.
+
+**Edit the top menu or footer**: these are repeated on every page, so make the same change in all eight `.html` files.
 
 ## Things to keep in mind
 

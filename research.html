@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research | Asif Raza</title>
-<meta name="description" content="Asif Raza: National Post-Doctoral Fellow, Department of Biosciences and Bioengineering, IIT Bombay.">
+<meta name="description" content="Asif Raza: National Post-Doctoral Fellow (ANRF N-PDF) in computational biomechanics, Department of Biosciences and Bioengineering, IIT Bombay.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,6 +19,7 @@
       <a href="academic-background.html">Academic Background</a>
       <a href="research.html" class="active" aria-current="page">Research</a>
       <a href="publications.html">Publications</a>
+      <a href="achievements.html">Achievements</a>
       <a href="gallery.html">Gallery</a>
       <a href="courses.html">Courses</a>
       <a href="contact.html">Contact</a>
@@ -45,10 +46,15 @@
   <!-- ===== PROJECT 1 ===== -->
   <article class="project" id="dual-phase-lag">
     <h3>Non-Fourier Heat Conduction: Dual Phase Lag Model</h3>
+    <div class="proj-when">Ph.D. project · August 2024 – April 2025</div>
     <p>A finite element study of a two-dimensional solid under small strain that compares classical
     Fourier heat conduction with the non-Fourier Dual Phase Lag (DPL) theory. The formulation uses
     Q4 elements with an implicit Newmark-β time integration scheme. The two models differ markedly in
     their transient response, which matters for microscale and fast-transient thermal applications.</p>
+    <p>The framework was extended to finite-strain dynamic thermoelasticity, using Newton–Raphson iterations
+    to model large deformations and thermal-wave propagation (MATLAB and Python).</p>
+    <p class="related">Related: A. Raza and D. Roy, "A finite element study of small-strain thermoelasticity under
+    Dual Phase Lag and Fourier heat conduction models" (under review).</p>
     <div class="fig-grid cols-2">
       <figure><img src="images/research/thermal-1.jpg" alt="Problem setup: cold and room-temperature samples in contact" loading="lazy"><figcaption>Problem setup: cold and room-temperature samples in contact</figcaption></figure>
       <figure><img src="images/research/thermal-2.jpg" alt="Thermal evolution at point A: experiment by Mitra et al. (1995)" loading="lazy"><figcaption>Thermal evolution at point A: experiment by Mitra et al. (1995)</figcaption></figure>
@@ -60,6 +66,7 @@
   <!-- ===== PROJECT 2 ===== -->
   <article class="project" id="strain-induced-crystallization">
     <h3>Geometric Thermodynamics of Strain-Induced Crystallization in Polymers</h3>
+    <div class="proj-when">Ph.D. project · August 2021 – July 2022</div>
     <p>Applies Ruppeiner's geometric thermodynamics to strain-induced crystallization in stretched rubber.
     The thermodynamic curvature reveals a spurious isochoric energy arising from stretching segments
     that have already crystallized, and a correction term for the free energy is proposed.</p>
@@ -74,9 +81,11 @@
   <!-- ===== PROJECT 3 ===== -->
   <article class="project" id="collapse-of-gels">
     <h3>Geometric Thermodynamics of Collapse of Gels</h3>
+    <div class="proj-when">Ph.D. project · August 2022 – August 2024</div>
     <p>Studies the volumetric phase transition in polyacrylamide gels using a Landau–Ginzburg free energy
     built on Flory–Huggins theory, together with Ruppeiner geometry. The resulting scalar curvature is
-    linked to microstructural interactions and to the universality class of the transition.</p>
+    linked to microstructural interactions and shows that the gel transition shares its universality
+    class with van der Waals fluids.</p>
     <p class="related">Related: A. Raza, S. Das and D. Roy, <a href="https://doi.org/10.1103/PhysRevE.110.044102" target="_blank" rel="noopener">Phys. Rev. E 110, 044102 (2024)</a> ·
     presented at <a href="https://www.asce.org/education-and-events/events/meetings/engineering-mechanics-institute-conference-and-probabilistic-mechanics-and-reliability-conference-emi-pmc-2024" target="_blank" rel="noopener">EMI/PMC 2024</a>, Chicago.</p>
     <div class="fig-grid cols-2">
@@ -98,6 +107,21 @@
       <figure><img src="images/research/dna-03.jpg" alt="Fractional helicity against scaled temperature" loading="lazy"><figcaption>Fractional helicity against scaled temperature</figcaption></figure>
       <figure><img src="images/research/dna-04.jpg" alt="Thermodynamic curvature R against helical segments" loading="lazy"><figcaption>Thermodynamic curvature R against helical segments</figcaption></figure>
     </div>
+  </article>
+
+  <!-- ===== OTHER PROJECTS ===== -->
+  <article class="project" id="other-projects">
+    <h3>Other Projects</h3>
+    <ul class="plain-list">
+      <li><strong>Topology optimization</strong> of 2D truss structures with stress and buckling constraints, improving
+      load-carrying efficiency and structural stability.</li>
+      <li><strong>Thermomechanical analysis</strong> of a sandwich wall panel in Abaqus, studying coupled heat transfer and
+      structural response.</li>
+      <li><strong>Machine learning</strong>: a classification pipeline to identify persons of interest in the Enron dataset
+      using scikit-learn (Udacity Machine Learning Engineer Nanodegree, March 2025).</li>
+      <li><strong>River water quality forecasting</strong> (B.Tech project, 2018–19): a hybrid best-subset and AR(2) model
+      predicting conductivity at 15 monitoring stations on the Godavari, evaluated with RMSE and R².</li>
+    </ul>
   </article>
 </section>
 

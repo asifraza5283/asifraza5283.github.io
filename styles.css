@@ -52,7 +52,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-o
 .hero{display:grid; grid-template-columns:1fr 280px; gap:56px; align-items:center; padding:64px 24px 56px; max-width:1080px; margin:0 auto;}
 .tag{display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; color:var(--accent); background:var(--accent-tint); padding:6px 12px; border-radius:3px; margin-bottom:16px;}
 .hero h1{font-size:52px; margin-bottom:10px;}
-.hero .role{font-size:19px; color:var(--ink-head); font-weight:500; margin:0 0 18px;}
+.hero .subtitle{font-size:19px; color:var(--ink-head); font-weight:500; margin:0 0 18px;}
 .hero p{font-size:16px; color:var(--ink-soft); margin:0 0 14px; max-width:640px;}
 .profile-photo{width:280px; height:350px; border-radius:10px; overflow:hidden; background:var(--card); box-shadow:0 1px 0 var(--line);}
 .profile-photo img{width:100%; height:100%; object-fit:cover; object-position:50% 25%;}
@@ -177,3 +177,39 @@ figcaption{font-size:13px; color:var(--ink-faint); margin-top:8px; text-align:ce
 /* Keep the research overview diagram at a comfortable size */
 .figure-wide img{max-width:760px; width:100%;}
 .gallery img{object-position:50% 30%;}
+
+/* ---------- Experience: several roles under one organisation ---------- */
+.entry .role{position:relative; padding:10px 0 4px 18px; border-left:2px solid #e2d3bd; margin-top:10px;}
+.entry.current .role:first-of-type{border-left-color:var(--accent);}
+.entry .role-title{font-weight:600; font-size:16px; color:var(--ink);}
+.entry .role .when{margin:2px 0 4px;}
+.badge{display:inline-block; margin-left:8px; font-size:11px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); background:var(--accent-tint); padding:2px 8px; border-radius:999px; vertical-align:2px;}
+.skills{font-size:13px !important; color:var(--ink-faint) !important;}
+.entry .logo.dark{background:#000; border-color:#000; padding:4px;}
+
+/* ---------- Awards, certifications, activities ---------- */
+.award-list{list-style:none; margin:0; padding:0;}
+.award-list li{display:flex; justify-content:space-between; gap:20px; padding:10px 0; border-bottom:1px solid var(--line); color:var(--ink-soft); font-size:15px;}
+.award-list li:last-child{border-bottom:none;}
+.award-list .yr{flex:0 0 auto; color:var(--ink-faint); font-weight:600; font-size:14px;}
+.proj-when{font-size:14px; font-weight:600; color:var(--ink-faint); margin:-4px 0 10px;}
+.plain-list{margin:0; padding-left:20px; color:var(--ink-soft); max-width:860px;}
+.plain-list li{margin:8px 0;}
+@media (max-width:520px){ .award-list li{flex-direction:column; gap:2px;} }
+
+/* ---------- Highlights strip (home) ---------- */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+.stat{display:flex; flex-direction:column; gap:4px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:18px 20px; color:var(--ink);}
+.stat:hover{border-color:var(--accent); text-decoration:none;}
+.stat-big{font-family:'Fraunces', serif; font-size:26px; font-weight:700; color:var(--accent); line-height:1.1;}
+.stat-small{font-size:13px; color:var(--ink-mute);}
+
+/* ---------- Achievements page ---------- */
+.grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
+.card.feature{border-top:3px solid var(--accent);}
+.card.feature h3{font-family:'Fraunces', serif; font-size:20px; margin:4px 0 10px;}
+.card.feature p{font-size:15px;}
+.feature-yr{font-size:13px; font-weight:600; color:var(--ink-faint); letter-spacing:.04em;}
+.card p + p{margin-top:8px;}
+@media (max-width:860px){ .stats, .grid-2{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .stats, .grid-2{grid-template-columns:1fr;} }
