@@ -3,52 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research — Asif Raza</title>
+<title>Research | Asif Raza</title>
+<meta name="description" content="Asif Raza: National Post-Doctoral Fellow, Department of Biosciences and Bioengineering, IIT Bombay.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="brand"><a href="index.html" style="color:inherit; text-decoration:none;">Asif Raza</a></div>
-  <div class="links">
-    <a href="index.html">Home</a>
-    <a href="academic-background.html">Academic Background</a>
-    <a href="research.html" class="active">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="courses.html">Courses</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+<!-- ===== TOP MENU (same on every page) ===== -->
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Asif Raza</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="academic-background.html">Academic Background</a>
+      <a href="research.html" class="active" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 
-<div class="page-body">
+<main>
 
-      <h1>Research</h1>
-      <p>An overview of my current and past research directions. Add figures, a short abstract per project, and links to related publications here.</p>
-      <div class="grid-3">
-        <div class="col">
-          <h3>Modeling &amp; Mechanics</h3>
-          <p>Constitutive modeling · Continuum mechanics · Continuum plasticity</p>
-        </div>
-        <div class="col">
-          <h3>Computation &amp; Design</h3>
-          <p>Finite element methods · Structural optimization · Fracture mechanics</p>
-        </div>
-        <div class="col">
-          <h3>Soft Matter &amp; Bio</h3>
-          <p>Soft matter · Thermoelasticity · Mechanical behavior of materials · Biomechanics</p>
-        </div>
-      </div>
-    
+<div class="page-title">
+  <h1>Research</h1>
+  <p>Thermomechanical and geometric-thermodynamic modeling of soft and non-equilibrium systems.</p>
 </div>
 
-<footer>
-  <div class="copyright">© 2026 Asif Raza</div>
-  <div class="social">
-    <a href="#">Google Scholar</a>
-    <a href="#">ORCID</a>
-    <a href="#">LinkedIn</a>
-    <a href="mailto:you@example.com">Email</a>
+<section class="section">
+  <div class="figure-wide">
+    <img src="images/research/phd-research-summary.png" alt="Overview of doctoral research projects feeding into advanced soft matter modeling">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Projects</h2>
+
+  <!-- ===== PROJECT 1 ===== -->
+  <article class="project" id="dual-phase-lag">
+    <h3>Non-Fourier Heat Conduction: Dual Phase Lag Model</h3>
+    <p>A finite element study of a two-dimensional solid under small strain that compares classical
+    Fourier heat conduction with the non-Fourier Dual Phase Lag (DPL) theory. The formulation uses
+    Q4 elements with an implicit Newmark-β time integration scheme. The two models differ markedly in
+    their transient response, which matters for microscale and fast-transient thermal applications.</p>
+    <div class="fig-grid cols-2">
+      <figure><img src="images/research/thermal-1.jpg" alt="Problem setup: cold and room-temperature samples in contact" loading="lazy"><figcaption>Problem setup: cold and room-temperature samples in contact</figcaption></figure>
+      <figure><img src="images/research/thermal-2.jpg" alt="Thermal evolution at point A: experiment by Mitra et al. (1995)" loading="lazy"><figcaption>Thermal evolution at point A: experiment by Mitra et al. (1995)</figcaption></figure>
+      <figure><img src="images/research/fourier.jpg" alt="Temperature field: Fourier model" loading="lazy"><figcaption>Temperature field: Fourier model</figcaption></figure>
+      <figure><img src="images/research/dpl.jpg" alt="Temperature field: DPL model" loading="lazy"><figcaption>Temperature field: DPL model</figcaption></figure>
+    </div>
+  </article>
+
+  <!-- ===== PROJECT 2 ===== -->
+  <article class="project" id="strain-induced-crystallization">
+    <h3>Geometric Thermodynamics of Strain-Induced Crystallization in Polymers</h3>
+    <p>Applies Ruppeiner's geometric thermodynamics to strain-induced crystallization in stretched rubber.
+    The thermodynamic curvature reveals a spurious isochoric energy arising from stretching segments
+    that have already crystallized, and a correction term for the free energy is proposed.</p>
+    <p class="related">Related: S. Das, A. Raza and D. Roy, <a href="https://doi.org/10.1103/PhysRevE.106.015005" target="_blank" rel="noopener">Phys. Rev. E 106, 015005 (2022)</a> ·
+    presented at <a href="https://complas2023.cimne.com/" target="_blank" rel="noopener">COMPLAS 2023</a>, Barcelona.</p>
+    <div class="fig-grid cols-2">
+      <figure><img src="images/research/sic-01.jpg" alt="Iso-strain energy surface against tensile stretch and degree of crystallinity" loading="lazy"><figcaption>Iso-strain energy surface against tensile stretch and degree of crystallinity</figcaption></figure>
+      <figure><img src="images/research/sic-02.jpg" alt="Iso-strain energy surface at different temperatures" loading="lazy"><figcaption>Iso-strain energy surface at different temperatures</figcaption></figure>
+    </div>
+  </article>
+
+  <!-- ===== PROJECT 3 ===== -->
+  <article class="project" id="collapse-of-gels">
+    <h3>Geometric Thermodynamics of Collapse of Gels</h3>
+    <p>Studies the volumetric phase transition in polyacrylamide gels using a Landau–Ginzburg free energy
+    built on Flory–Huggins theory, together with Ruppeiner geometry. The resulting scalar curvature is
+    linked to microstructural interactions and to the universality class of the transition.</p>
+    <p class="related">Related: A. Raza, S. Das and D. Roy, <a href="https://doi.org/10.1103/PhysRevE.110.044102" target="_blank" rel="noopener">Phys. Rev. E 110, 044102 (2024)</a> ·
+    presented at <a href="https://www.asce.org/education-and-events/events/meetings/engineering-mechanics-institute-conference-and-probabilistic-mechanics-and-reliability-conference-emi-pmc-2024" target="_blank" rel="noopener">EMI/PMC 2024</a>, Chicago.</p>
+    <div class="fig-grid cols-2">
+      <figure><img src="images/research/gels-01.jpg" alt="Isotherms showing the critical isotherm and critical point" loading="lazy"><figcaption>Isotherms showing the critical isotherm and critical point</figcaption></figure>
+      <figure><img src="images/research/gels-02.jpg" alt="Reduced isotherms with spinodal and coexistence curves" loading="lazy"><figcaption>Reduced isotherms with spinodal and coexistence curves</figcaption></figure>
+    </div>
+  </article>
+
+  <!-- ===== PROJECT 4 ===== -->
+  <article class="project" id="helix-coil-dna">
+    <h3>Geometric Thermodynamics of Helix–Coil Transition in DNA</h3>
+    <p>Uses the Zimm–Bragg model and Ruppeiner geometry, with temperature and the number of helical
+    segments as thermodynamic coordinates, to examine how the curvature varies with temperature and
+    fractional helicity across the helix–coil transition.</p>
+    <p class="related">Related: presented at <a href="https://www.wccm2024.org/" target="_blank" rel="noopener">WCCM-PANACM 2024</a>, Vancouver.</p>
+    <div class="fig-grid cols-4">
+      <figure><img src="images/research/dna-01.png" alt="Helix and coil states of a chain" loading="lazy"><figcaption>Helix and coil states of a chain</figcaption></figure>
+      <figure><img src="images/research/dna-02.png" alt="Fractional helicity of polybenzylglutamate oligomers" loading="lazy"><figcaption>Fractional helicity of polybenzylglutamate oligomers</figcaption></figure>
+      <figure><img src="images/research/dna-03.jpg" alt="Fractional helicity against scaled temperature" loading="lazy"><figcaption>Fractional helicity against scaled temperature</figcaption></figure>
+      <figure><img src="images/research/dna-04.jpg" alt="Thermodynamic curvature R against helical segments" loading="lazy"><figcaption>Thermodynamic curvature R against helical segments</figcaption></figure>
+    </div>
+  </article>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2026 Asif Raza · IIT Bombay</div>
+    <div class="links">
+      <a href="https://scholar.google.com/citations?user=yoYc0-4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-0354-5394" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Asif-Raza-32" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/asifraza-iisc" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </footer>
 
